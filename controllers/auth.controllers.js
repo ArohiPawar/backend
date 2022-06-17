@@ -1,6 +1,6 @@
 //its add buisness logic
 
-const User=require("../models/User")
+const User=require("../models/user")
 const signUp=async(req,res)=>{
     console.log(req.body)
    const user=new User({
