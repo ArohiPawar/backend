@@ -18,6 +18,8 @@ const signUp=async(req,res)=>{
     education2:req.body.education2,
     profilePicture:splitArray[splitArray.length-1]
    })
+   console.log('user');
+   console.log(user);
   await user.save().then(data=>{
     console.log(data);
     res.json({
