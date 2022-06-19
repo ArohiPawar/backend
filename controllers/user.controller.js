@@ -26,7 +26,22 @@ const editdata=(req,res)=>{
     })
  
 }
+const deleteData=(req,res)=>{
+const id=req.params.id;
+console.log('req');
+console.log(req);
+User.deleteOne({_id:id}).then(result=>{
+    res.json({
+        message:"successfully deleted"
+    })
+}).catch(err=>{
+    res.json({
+        message:"failed"
+    })
+})
+}
 module.exports={
     getUserdata,
-    editdata
+    editdata,
+    deleteData
 }

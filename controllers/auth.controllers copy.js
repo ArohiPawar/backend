@@ -11,11 +11,12 @@ const signUp=async(req,res)=>{
     console.log(splitArray[splitArray.length-1]);
 
     const user=new User({
-        productname:req.body.productname,
-        productrate:req.body.productrate,
-        productquantity:req.body.productquantity,
-        productquality:req.body.productquality,
-        profilePicture:splitArray[splitArray.length-1]
+    name:req.body.name,
+    email:req.body.email,
+    phone:req.body.phone,
+    education1:req.body.education1,
+    education2:req.body.education2,
+    profilePicture:splitArray[splitArray.length-1]
    })
    console.log('user');
    console.log(user);

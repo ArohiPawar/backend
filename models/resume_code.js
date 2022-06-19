@@ -1,18 +1,20 @@
 const mongoose=require("mongoose");
 const Userschema=new mongoose.Schema({
-    productname:{
+    name:{
         type:String
     },
-    productrate:{
+    email:{
         type:String
     },
-    productquantity:{
+    phone:{
         type:String
     },
-    productquality:{
+    education1:{
         type:String
     },
-    
+    education2:{
+        type:String
+    },
     profilePicture:{
         type:String
     }
