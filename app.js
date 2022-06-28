@@ -13,6 +13,7 @@ const branchrouter=require("./routes/branch.router")
 const studentrouter=require("./routes/student.router")
 
 app.use(express.urlencoded({extended:true}))
+app.use("/addproduct",authrouter)
 app.use("/user",userrouter)
 app.use("/branch",branchrouter)
 app.use("/student",studentrouter)
